@@ -156,6 +156,16 @@ public class Algorithm2DArrays {
      *  @return  an ArrayList containing all strings in wordChart with length len
      */
     public static ArrayList<String> findStringsOfLength(String[][] wordChart, int len)
-    { /* implement this method! */ }
+    {
+        ArrayList<String> word = new ArrayList<String>();
+        for (String[] i : wordChart){
+            for (String j : i){
+                if (j.length() == len){
+                    word.add(j);
+                }
+            }
+        }
+        return word;
+    }
 
 }
